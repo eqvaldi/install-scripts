@@ -3,17 +3,17 @@
 cmd=(dialog --keep-tite --menu "Select Firmware:" 22 76 16)
 
 options=(1 "Intel PC "
-         2 "Intel PC Realtek Wlan/ETH Firmware"
-         3 "Intel PC Brodcom Wlan/ETH Firmware"
+         2 "Intel PC Realtek+Brodcom Wlan/ETH Firmware"
+         3 "firmware-qcom-media+SOC "
          4 "AMD PC"
-         5 "AMD PC Realtek Wlan/ETH Firmware"
-         6 "AMD PC Brodcom Wlan/ETH Firmware"
+         5 "AMD PC Realtek+Brodcom Wlan/ETH Firmware"
+         6 "firmware-qcom-media+SOC Realtek+Brodcom Wlan/ETH Firmware"
          7 "Raspberry Pi Firmware"
          8 "Raspberry Pi Firmware/WideWine (RPIOS)"
          9 "Intel Server Firmware"
          10 "AMD Server Firmware"
-	 11 "Linux Firmware/Realtek Wlan/ETH Firmware"
-         12 "Linux Firmware/Brodcom Wlan/ETH Firmware"
+	 11 "Linux Firmware/Realtek+Brodcom Wlan/ETH Firmware"
+         12 "Linux Firmware/"
          13 "Armbian Firmware/Realtek Wlan/ETH Firmware"
          14 "Armbian Firmware/Brodcom Wlan/ETH Firmware"
          15 "ARM Server Firmware"
@@ -25,7 +25,7 @@ for choice in $choices
 do
     case $choice in
         1)
-            apt install intel-microcode firmware-sof-signed firmware-misc-nonfree firmware-linux-free alsa-firmware-loaders pciutils cifs-utils -y
+            apt install intel-microcode firmware-sof-signed firmware-intel-misc firmware-intel-sound firmware-iwlwifi firmware-misc-nonfree firmware-linux-free alsa-firmware-loaders pciutils cifs-utils -y
 		cmd=(dialog --keep-tite --menu "Select linux Headers:" 22 76 16)
 		
 		options=(1 "Amd64"
@@ -73,7 +73,7 @@ do
 			done
             ;;
         2)
-            apt install intel-microcode firmware-sof-signed firmware-realtek firmware-misc-nonfree firmware-linux-free alsa-firmware-loaders pciutils cifs-utils -y
+            apt install intel-microcode firmware-sof-signed firmware-intel-misc firmware-intel-sound firmware-iwlwifi firmware-realtek firmware-brcm80211 firmware-mediatek firmware-misc-nonfree firmware-linux-free alsa-firmware-loaders pciutils cifs-utils -y
 		cmd=(dialog --keep-tite --menu "Select linux Headers:" 22 76 16)
 		
 		options=(1 "Amd64"
@@ -121,7 +121,7 @@ do
 			done
             ;;
         3)
-            apt install intel-microcode firmware-sof-signed firmware-misc-nonfree firmware-linux-free firmware-brcm80211 alsa-firmware-loaders pciutils cifs-utils -y
+            apt install firmware-qcom-media firmware-qcom-soc -y
 		cmd=(dialog --keep-tite --menu "Select linux Headers:" 22 76 16)
 		
 		options=(1 "Amd64"
@@ -169,7 +169,7 @@ do
 			done
             ;;
         4)
-            apt install firmware-amd-graphics amd64-microcode alsa-firmware-loaders pciutils cifs-utils -y
+            apt install firmware-amd-graphics amd64-microcode firmware-iwlwifi alsa-firmware-loaders pciutils cifs-utils -y
 		cmd=(dialog --keep-tite --menu "Select linux Headers:" 22 76 16)
 		
 		options=(1 "Amd64"
@@ -217,7 +217,7 @@ do
 			done
             ;;
         5)
-            apt install firmware-amd-graphics amd64-microcode firmware-realtek alsa-firmware-loaders pciutils cifs-utils -y
+            apt install firmware-amd-graphics amd64-microcode firmware-iwlwifi firmware-realtek firmware-brcm80211 firmware-mediatek alsa-firmware-loaders pciutils cifs-utils -y
 		cmd=(dialog --keep-tite --menu "Select linux Headers:" 22 76 16)
 		
 		options=(1 "Amd64"
@@ -265,7 +265,7 @@ do
 			done
             ;;
         6)
-            apt install firmware-amd-graphics amd64-microcode firmware-brcm80211 alsa-firmware-loaders pciutils cifs-utils -y
+            apt install firmware-qcom-media firmware-qcom-soc firmware-realtek firmware-brcm80211 -y
 		cmd=(dialog --keep-tite --menu "Select linux Headers:" 22 76 16)
 		
 		options=(1 "Amd64"
