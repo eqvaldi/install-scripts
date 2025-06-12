@@ -65,14 +65,11 @@ do
 		    case $choice in
 		        1)
 		            rm /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            #echo 'deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+			    echo 'deb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+
 		            cat /etc/apt/sources.list
 		            apt update -y
 		            bash ./firmware.sh
@@ -80,14 +77,10 @@ do
 		            ;;
 		        2)
 		            rm /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            #echo 'deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+			    echo 'deb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
 		            cat /etc/apt/sources.list
 		            apt update -y
 		            bash ./firmware.sh
@@ -129,14 +122,10 @@ do
 		    case $choice in
 		        1)
 		            rm /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            #echo 'deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+			    echo 'deb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
 		            cat /etc/apt/sources.list
 		            apt update -y
 		            bash ./firmware.sh
@@ -144,14 +133,10 @@ do
 		            ;;
 		        2)
 		            rm /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            #echo 'deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+			    echo 'deb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
 		            cat /etc/apt/sources.list
 		            apt update -y
 		            bash ./firmware.sh
@@ -193,14 +178,10 @@ do
 		    case $choice in
 		        1)
 		            rm /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            #echo 'deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+			    echo 'deb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
 		            cat /etc/apt/sources.list
 		            apt update -y
 		            bash ./firmware.sh
@@ -208,14 +189,10 @@ do
 		            ;;
 		        2)
 		            rm /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            #echo 'deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+			    echo 'deb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
 		            cat /etc/apt/sources.list
 		            apt update -y
 		            bash ./firmware.sh
@@ -257,14 +234,10 @@ do
 		    case $choice in
 		        1)
 		            rm /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            #echo 'deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+			    echo 'deb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
 		            cat /etc/apt/sources.list
 		            apt update -y
 		            bash ./firmware.sh
@@ -272,14 +245,10 @@ do
 		            ;;
 		        2)
 		            rm /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            #echo 'deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+			    echo 'deb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
 		            cat /etc/apt/sources.list
 		            apt update -y
 		            bash ./firmware.sh
@@ -321,14 +290,10 @@ do
 		    case $choice in
 		        1)
 		            rm /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            #echo 'deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+			    echo 'deb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
 		            cat /etc/apt/sources.list
 		            apt update -y
 		            bash ./firmware.sh
@@ -336,14 +301,10 @@ do
 		            ;;
 		        2)
 		            rm /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            #echo 'deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+			    echo 'deb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
 		            cat /etc/apt/sources.list
 		            apt update -y
 		            bash ./firmware.sh
@@ -385,14 +346,10 @@ do
 		    case $choice in
 		        1)
 		            rm /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            #echo 'deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+			    echo 'deb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
 		            cat /etc/apt/sources.list
 		            apt update -y
 		            bash ./firmware.sh
@@ -400,14 +357,10 @@ do
 		            ;;
 		        2)
 		            rm /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            #echo 'deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+			    echo 'deb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
 		            cat /etc/apt/sources.list
 		            apt update -y
 		            bash ./firmware.sh
@@ -449,14 +402,10 @@ do
 		    case $choice in
 		        1)
 		            rm /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            #echo 'deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+			    echo 'deb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
 		            cat /etc/apt/sources.list
 		            apt update -y
 		            bash ./firmware.sh
@@ -464,14 +413,10 @@ do
 		            ;;
 		        2)
 		            rm /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            #echo 'deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+			    echo 'deb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
 		            cat /etc/apt/sources.list
 		            apt update -y
 		            bash ./firmware.sh
@@ -513,14 +458,10 @@ do
 		    case $choice in
 		        1)
 		            rm /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            #echo 'deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+			    echo 'deb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
 		            cat /etc/apt/sources.list
 		            apt update -y
 		            bash ./firmware.sh
@@ -528,14 +469,10 @@ do
 		            ;;
 		        2)
 		            rm /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            #echo 'deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+			    echo 'deb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
 		            cat /etc/apt/sources.list
 		            apt update -y
 		            bash ./firmware.sh
@@ -578,14 +515,10 @@ do
 		    case $choice in
 		        1)
 		            rm /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            #echo 'deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+			    echo 'deb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
 		            cat /etc/apt/sources.list
 		            apt update -y
 		            bash ./firmware.sh
@@ -593,14 +526,10 @@ do
 		            ;;
 		        2)
 		            rm /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            #echo 'deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+			    echo 'deb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
 		            cat /etc/apt/sources.list
 		            apt update -y
 		            bash ./firmware.sh
@@ -631,14 +560,10 @@ do
 		    case $choice in
 		        1)
 		            rm /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            #echo 'deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+			    echo 'deb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
 		            cat /etc/apt/sources.list
 		            apt update -y
 		            bash ./firmware.sh
@@ -646,14 +571,11 @@ do
 		            ;;
 		        2)
 		            rm /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-			    echo 'deb http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
-		            echo 'deb-src http://security.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            echo 'deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+		            #echo 'deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+			    echo 'deb http://security.debian.org/debian-security/ trixie-security main contrib non-free non-free-firmware' >> /etc/apt/sources.list
+
 		            cat /etc/apt/sources.list
 		            apt update -y
 		            bash ./firmware.sh
