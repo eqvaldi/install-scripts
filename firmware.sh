@@ -25,7 +25,7 @@ for choice in $choices
 do
     case $choice in
         1)
-            apt install intel-microcode firmware-sof-signed firmware-intel-misc firmware-intel-sound firmware-iwlwifi firmware-misc-nonfree firmware-linux-free alsa-firmware-loaders pciutils cifs-utils -y
+            apt install intel-microcode firmware-sof-signed firmware-intel-misc firmware-intel-sound firmware-iwlwifi firmware-linux-free alsa-firmware-loaders pciutils cifs-utils -y
 		cmd=(dialog --keep-tite --menu "Select linux Headers:" 22 76 16)
 		
 		options=(1 "Amd64"
@@ -73,7 +73,7 @@ do
 			done
             ;;
         2)
-            apt install intel-microcode firmware-sof-signed firmware-intel-misc firmware-intel-sound firmware-iwlwifi firmware-realtek firmware-brcm80211 firmware-mediatek firmware-misc-nonfree firmware-linux-free alsa-firmware-loaders pciutils cifs-utils -y
+            apt install intel-microcode firmware-sof-signed firmware-intel-misc firmware-intel-sound firmware-iwlwifi firmware-realtek firmware-brcm80211 firmware-mediatek firmware-linux-free alsa-firmware-loaders pciutils cifs-utils -y
 		cmd=(dialog --keep-tite --menu "Select linux Headers:" 22 76 16)
 		
 		options=(1 "Amd64"
@@ -321,7 +321,7 @@ do
 	    bash ./other.sh
 	    ;;
         9)
-            apt install intel-microcode firmware-sof-signed firmware-misc-nonfree firmware-linux-free ixp4xx-microcode samba alsa-firmware-loaders cifs-utils pciutils openssh-* -y
+            apt install intel-microcode firmware-sof-signed firmware-linux-free ixp4xx-microcode samba alsa-firmware-loaders cifs-utils pciutils openssh-* -y
 		cmd=(dialog --keep-tite --menu "Select linux Headers:" 22 76 16)
 		
 		options=(1 "Amd64"
@@ -369,7 +369,7 @@ do
 			done
             ;;
         10)
-            apt install amd64-microcode firmware-misc-nonfree firmware-linux-free ixp4xx-microcode samba alsa-firmware-loaders cifs-utils pciutils openssh-* -y
+            apt install amd64-microcode firmware-linux-free ixp4xx-microcode samba alsa-firmware-loaders cifs-utils pciutils openssh-* -y
 		cmd=(dialog --keep-tite --menu "Select linux Headers:" 22 76 16)
 		
 		options=(1 "Amd64"
@@ -417,7 +417,7 @@ do
 			done
             ;;
         11)
-            apt install firmware-misc-nonfree firmware-linux-free firmware-realtek alsa-firmware-loaders pciutils cifs-utils -y
+            apt install firmware-linux-free firmware-realtek alsa-firmware-loaders pciutils cifs-utils -y
 		cmd=(dialog --keep-tite --menu "Select linux Headers:" 22 76 16)
 		
 		options=(1 "Amd64"
@@ -465,7 +465,7 @@ do
 			done
             ;;
         12)
-            apt install firmware-misc-nonfree firmware-linux-free firmware-brcm80211 alsa-firmware-loaders pciutils cifs-utils -y
+            apt install firmware-linux-free firmware-brcm80211 alsa-firmware-loaders pciutils cifs-utils -y
 		cmd=(dialog --keep-tite --menu "Select linux Headers:" 22 76 16)
 		
 		options=(1 "Amd64"
@@ -519,7 +519,7 @@ do
 	    bash ./other.sh
 	    ;;
         15)
-            apt install firmware-misc-nonfree firmware-linux-free ixp4xx-microcode samba alsa-firmware-loaders cifs-utils pciutils openssh-* -y
+            apt install firmware-linux-free ixp4xx-microcode samba alsa-firmware-loaders cifs-utils pciutils openssh-* -y
 		cmd=(dialog --keep-tite --menu "Select linux Headers:" 22 76 16)
 		
 		options=(1 "Amd64"
