@@ -41,7 +41,7 @@ do
     case $choice in
         1)
             apt install cinnamon cinnamon-control-center cinnamon-screensaver cinnamon-session cinnamon-settings-daemon dconf-gsettings-backend f3 desktop-base pulseaudio numix-icon-theme pulseaudio-module-bluetooth pavucontrol gnome-terminal muffin nemo xserver-xorg file-roller network-manager-gnome gnome-calculator ghostscript libmtp-runtime light-locker vlc hyfetch lightdm-gtk-greeter-settings eog xorg lightdm synaptic gdebi htop gnome-icon-theme nemo usb-modeswitch blueman genisoimage gnome-disk-utility gvfs-fuse gedit inputattach xserver-xorg-input-all xserver-xorg-input-synaptics xserver-xorg-video-all system-config-printer transmission-gtk tumbler mesa-utils gparted xarchiver p7zip zip unzip uuid-runtime mesa-utils-bin gvfs-backends gvfs-common soundconverter ffmpeg build-essential libcurl4-openssl-dev libalut-dev libsdl2-dev libsdl2-mixer-dev bluez-firmware alsa-utils lm-sensors libgtk-3-dev libgtk3-perl ffmpeg libavcodec-dev exfalso flac font-manager libjpeg-dev libglx-mesa0 libgl1-mesa-dri gnome-screenshot -y
-            apt install dbus-x11 build-essential git nasm libgl1-mesa-dev libsdl2-dev flac libflac-dev libvpx-dev libgtk2.0-dev freepats ninja-build qtbase5-dev qtbase5-private-dev qtbase5-dev-tools qttools5-dev openssl miniupnpc libao-dev vainfo vdpauinfo libzip-dev zipcmp zipmerge ziptool glmark2-* -y
+            apt install dbus-x11 build-essential git nasm libgl1-mesa-dev libsdl2-dev flac libflac-dev libvpx-dev libgtk2.0-dev freepats libsndfile1-dev ninja-build qtbase5-dev qtbase5-private-dev qtbase5-dev-tools qttools5-dev openssl miniupnpc libao-dev vainfo vdpauinfo libzip-dev zipcmp zipmerge ziptool glmark2-* -y
             apt update
             apt upgrade -y
             rm /etc/apt/sources.list.d/vscode.list
@@ -98,7 +98,7 @@ do
             ;;
         2)
             apt install xfce4 xfce4-terminal file-roller network-manager-gnome galculator ghostscript libmtp-runtime light-locker vlc hyfetch f3 lightdm-gtk-greeter-settings ristretto xorg lightdm synaptic gdebi htop pulseaudio numix-icon-theme pulseaudio-module-bluetooth gnome-icon-theme usb-modeswitch blueman genisoimage gnome-disk-utility gvfs-fuse mousepad inputattach xserver-xorg-input-all xserver-xorg-input-synaptics xserver-xorg-video-all system-config-printer transmission-gtk xfce4-notifyd xfce4-power-manager xfce4-whiskermenu-plugin xfce4-power-manager-plugins pavucontrol tumbler mesa-utils gparted xarchiver p7zip zip unzip uuid-runtime thunar-archive-plugin mesa-utils-bin gvfs-backends gvfs-common soundconverter build-essential libcurl4-openssl-dev libalut-dev libsdl2-dev libsdl2-mixer-dev bluez-firmware alsa-utils lm-sensors libgtk-3-dev libgtk3-perl ffmpeg libavcodec-dev exfalso flac font-manager libjpeg-dev xfce4-screenshooter catfish libglx-mesa0 libgl1-mesa-dri thunar-archive-plugin -y
-            apt install dbus-x11 build-essential git nasm libgl1-mesa-dev libsdl2-dev flac libflac-dev libvpx-dev libgtk2.0-dev freepats ninja-build qtbase5-dev qtbase5-private-dev qtbase5-dev-tools qttools5-dev openssl miniupnpc libao-dev vainfo vdpauinfo libzip-dev zipcmp zipmerge ziptool glmark2-* -y
+            apt install dbus-x11 build-essential git nasm libgl1-mesa-dev libsdl2-dev flac libflac-dev libvpx-dev libgtk2.0-dev freepats libsndfile1-dev ninja-build qtbase5-dev qtbase5-private-dev qtbase5-dev-tools qttools5-dev openssl miniupnpc libao-dev vainfo vdpauinfo libzip-dev zipcmp zipmerge ziptool glmark2-* -y
             apt update
             apt upgrade -y
             rm /etc/apt/sources.list.d/vscode.list
@@ -154,7 +154,7 @@ do
             ;;
         3)
             apt install xfce4 xfce4-terminal file-roller galculator libmtp-runtime light-locker hyfetch lightdm-gtk-greeter-settings numix-icon-theme f3 xorg lightdm htop usb-modeswitch genisoimage inputattach xfce4-notifyd xfce4-power-manager xfce4-whiskermenu-plugin xfce4-power-manager-plugins gparted xarchiver p7zip zip unzip uuid-runtime thunar-archive-plugin libgtk-3-dev libgtk3-perl ffmpeg libavcodec-dev exfalso font-manager libjpeg-dev xfce4-screenshooter catfish libglx-mesa0 libgl1-mesa-dri thunar-archive-plugin -y
-            apt install dbus-x11 build-essential git nasm libgl1-mesa-dev libsdl2-dev flac libflac-dev libvpx-dev libgtk2.0-dev freepats ninja-build qtbase5-dev qtbase5-private-dev qtbase5-dev-tools qttools5-dev openssl miniupnpc libao-dev vainfo vdpauinfo libzip-dev zipcmp zipmerge ziptool libsdl2-mixer-dev bluez-firmware alsa-utils lm-sensors glmark2-* -y
+            apt install dbus-x11 build-essential git nasm libgl1-mesa-dev libsdl2-dev flac libflac-dev libvpx-dev libgtk2.0-dev freepats libsndfile1-dev ninja-build qtbase5-dev qtbase5-private-dev qtbase5-dev-tools qttools5-dev openssl miniupnpc libao-dev vainfo vdpauinfo libzip-dev zipcmp zipmerge ziptool libsdl2-mixer-dev bluez-firmware alsa-utils lm-sensors glmark2-* -y
             apt update
             apt upgrade -y
             rm /etc/apt/sources.list.d/vscode.list
@@ -210,7 +210,7 @@ do
             ;;
         4)
             apt install openbox lxsession lxde-common lxappearance lxappearance-obconf openbox-lxde-session lxpanel xfce4-notifyd xfce4-power-manager f3 xfce4-power-manager-plugins ristretto pavucontrol tumbler mesa-utils gparted xarchiver usb-modeswitch p7zip zip unzip uuid-runtime mesa-utils-bin gvfs-backends gvfs-common inputattach xserver-xorg-input-all xserver-xorg-input-synaptics xserver-xorg-video-all system-config-printer transmission-gtk pcmanfm lxterminal mousepad file-roller galculator ghostscript libmtp-runtime light-locker vlc hyfetch lightdm-gtk-greeter-settings xorg lightdm synaptic gdebi htop pulseaudio numix-icon-theme gnome-disk-utility gnome-icon-theme soundconverter network-manager-gnome ffmpeg build-essential libcurl4-openssl-dev libalut-dev libsdl2-dev libsdl2-mixer-dev bluez-firmware alsa-utils lm-sensors libgtk-3-dev libgtk3-perl ffmpeg libavcodec-dev exfalso flac font-manager libjpeg-dev libglx-mesa0 libgl1-mesa-dri xfce4-screenshooter -y
-            apt install dbus-x11 build-essential git nasm libgl1-mesa-dev libsdl2-dev flac libflac-dev libvpx-dev libgtk2.0-dev freepats ninja-build qtbase5-dev qtbase5-private-dev qtbase5-dev-tools qttools5-dev openssl miniupnpc libao-dev vainfo vdpauinfo libzip-dev zipcmp zipmerge ziptool glmark2-* -y
+            apt install dbus-x11 build-essential git nasm libgl1-mesa-dev libsdl2-dev flac libflac-dev libvpx-dev libgtk2.0-dev freepats libsndfile1-dev ninja-build qtbase5-dev qtbase5-private-dev qtbase5-dev-tools qttools5-dev openssl miniupnpc libao-dev vainfo vdpauinfo libzip-dev zipcmp zipmerge ziptool glmark2-* -y
             apt update
             apt upgrade -y
             rm /etc/apt/sources.list.d/vscode.list
@@ -266,7 +266,7 @@ do
             ;;
         5)
             apt install caja dconf-gsettings-backend fonts-cantarell gvfs-backends marco mate-control-center mate-desktop f3 mate-icon-theme mate-menus mate-notification-daemon mate-panel mate-polkit mate-session-manager mate-settings-daemon mate-terminal mate-themes file-roller network-manager-gnome galculator ghostscript libmtp-runtime light-locker vlc hyfetch lightdm-gtk-greeter-settings eom xorg lightdm synaptic gdebi htop pulseaudio numix-icon-theme pulseaudio-module-bluetooth gnome-icon-theme usb-modeswitch blueman genisoimage gnome-disk-utility gvfs-fuse pluma inputattach xserver-xorg-input-all xserver-xorg-input-synaptics xserver-xorg-video-all system-config-printer transmission-gtk xfce4-notifyd mate-power-manager pavucontrol tumbler mesa-utils gparted xarchiver p7zip zip unzip uuid-runtime mesa-utils-bin gvfs-backends gvfs-common soundconverter ffmpeg build-essential libcurl4-openssl-dev libalut-dev libsdl2-dev libsdl2-mixer-dev bluez-firmware alsa-utils lm-sensors libgtk-3-dev libgtk3-perl ffmpeg libavcodec-dev exfalso flac libjpeg-dev libglx-mesa0 libgl1-mesa-dri xfce4-screenshooter -y
-            apt install dbus-x11 build-essential git nasm libgl1-mesa-dev libsdl2-dev flac libflac-dev libvpx-dev libgtk2.0-dev freepats ninja-build qtbase5-dev qtbase5-private-dev qtbase5-dev-tools qttools5-dev openssl miniupnpc libao-dev vainfo vdpauinfo libzip-dev zipcmp zipmerge ziptool glmark2-* -y
+            apt install dbus-x11 build-essential git nasm libgl1-mesa-dev libsdl2-dev flac libflac-dev libvpx-dev libgtk2.0-dev freepats libsndfile1-dev ninja-build qtbase5-dev qtbase5-private-dev qtbase5-dev-tools qttools5-dev openssl miniupnpc libao-dev vainfo vdpauinfo libzip-dev zipcmp zipmerge ziptool glmark2-* -y
             apt update
             apt upgrade -y
             rm /etc/apt/sources.list.d/vscode.list
@@ -322,7 +322,7 @@ do
             ;;
         6)
             apt install desktop-file-utils lxqt-config lxqt-globalkeys lxqt-notificationd lxqt-panel lxqt-policykit lxqt-qtplugin lxqt-runner lxqt-session lxqt-system-theme lxqt-themes pcmanfm-qt featherpad lximage-qt qterminal openbox obconf-qt lxqt-powermanagement lxqt-qtplugin xorg xinit file-roller f3 pulseaudio numix-icon-theme pulseaudio-module-bluetooth pavucontrol-qt galculator ghostscript libmtp-runtime light-locker vlc hyfetch lightdm-gtk-greeter-settings lightdm synaptic gdebi htop gnome-icon-theme usb-modeswitch blueman genisoimage gnome-disk-utility gvfs-fuse inputattach xserver-xorg-input-all xserver-xorg-video-all system-config-printer transmission-qt tumbler mesa-utils gparted xarchiver p7zip zip unzip uuid-runtime mesa-utils-bin gvfs-backends gvfs-common soundconverter ffmpeg build-essential libcurl4-openssl-dev libalut-dev libsdl2-dev libsdl2-mixer-dev bluez-firmware alsa-utils lm-sensors libgtk-3-dev libgtk3-perl ffmpeg libavcodec-dev exfalso flac font-manager libjpeg-dev -y
-            apt install dbus-x11 build-essential git nasm libgl1-mesa-dev libsdl2-dev flac libflac-dev libvpx-dev libgtk2.0-dev freepats ninja-build qtbase5-dev qtbase5-private-dev qtbase5-dev-tools qttools5-dev openssl miniupnpc libao-dev vainfo vdpauinfo libzip-dev zipcmp zipmerge ziptool glmark2-* -y
+            apt install dbus-x11 build-essential git nasm libgl1-mesa-dev libsdl2-dev flac libflac-dev libvpx-dev libgtk2.0-dev freepats libsndfile1-dev ninja-build qtbase5-dev qtbase5-private-dev qtbase5-dev-tools qttools5-dev openssl miniupnpc libao-dev vainfo vdpauinfo libzip-dev zipcmp zipmerge ziptool glmark2-* -y
             apt update
             apt upgrade -y
             rm /etc/apt/sources.list.d/vscode.list
@@ -378,7 +378,7 @@ do
             ;;
         7)
             apt install fvwm3 xfce4-terminal thunar pulseaudio numix-icon-theme pasystray light-locker lightdm-gtk-greeter-settings lightdm file-roller f3 network-manager-gnome galculator ghostscript libmtp-runtime vlc hyfetch ristretto xorg synaptic gdebi htop gnome-icon-theme usb-modeswitch blueman genisoimage gnome-disk-utility gvfs-fuse mousepad inputattach xserver-xorg-input-all xserver-xorg-input-synaptics xserver-xorg-video-all xorg software-properties-qt system-config-printer transmission-gtk tumbler mesa-utils gparted xarchiver p7zip zip unzip uuid-runtime mesa-utils-bin gvfs-backends gvfs-common soundconverter ffmpeg build-essential libcurl4-openssl-dev libalut-dev libsdl2-dev libsdl2-mixer-dev bluez-firmware alsa-utils lm-sensors libgtk-3-dev libgtk3-perl ffmpeg libavcodec-dev exfalso flac font-manager libjpeg-dev xfce4-screenshooter catfish libglx-mesa0 libgl1-mesa-dri thunar-archive-plugin -y
-            apt install dbus-x11 build-essential git nasm libgl1-mesa-dev libsdl2-dev flac libflac-dev libvpx-dev libgtk2.0-dev freepats ninja-build qtbase5-dev qtbase5-private-dev qtbase5-dev-tools qttools5-dev openssl miniupnpc libao-dev vainfo vdpauinfo libzip-dev zipcmp zipmerge ziptool glmark2-* -y
+            apt install dbus-x11 build-essential git nasm libgl1-mesa-dev libsdl2-dev flac libflac-dev libvpx-dev libgtk2.0-dev freepats libsndfile1-dev ninja-build qtbase5-dev qtbase5-private-dev qtbase5-dev-tools qttools5-dev openssl miniupnpc libao-dev vainfo vdpauinfo libzip-dev zipcmp zipmerge ziptool glmark2-* -y
             apt update
             apt upgrade -y
             rm /etc/apt/sources.list.d/vscode.list
@@ -434,7 +434,7 @@ do
             ;;
         8)
             apt install enlightenment xfce4-terminal connman thunar pulseaudio numix-icon-theme pasystray light-locker lightdm-gtk-greeter-settings lightdm file-roller f3 network-manager-gnome galculator ghostscript libmtp-runtime vlc hyfetch ristretto xorg synaptic gdebi htop gnome-icon-theme usb-modeswitch blueman genisoimage gnome-disk-utility gvfs-fuse mousepad inputattach xserver-xorg-input-all xserver-xorg-input-synaptics xserver-xorg-video-all xorg software-properties-qt system-config-printer transmission-gtk tumbler mesa-utils gparted xarchiver p7zip zip unzip uuid-runtime mesa-utils-bin gvfs-backends gvfs-common soundconverter ffmpeg build-essential libcurl4-openssl-dev libalut-dev libsdl2-dev libsdl2-mixer-dev bluez-firmware alsa-utils lm-sensors libgtk-3-dev libgtk3-perl ffmpeg libavcodec-dev exfalso flac font-manager libjpeg-dev xfce4-screenshooter catfish libglx-mesa0 libgl1-mesa-dri thunar-archive-plugin -y
-            apt install dbus-x11 build-essential git nasm libgl1-mesa-dev libsdl2-dev flac libflac-dev libvpx-dev libgtk2.0-dev freepats ninja-build qtbase5-dev qtbase5-private-dev qtbase5-dev-tools qttools5-dev openssl miniupnpc libao-dev vainfo vdpauinfo libzip-dev zipcmp zipmerge ziptool glmark2-* -y
+            apt install dbus-x11 build-essential git nasm libgl1-mesa-dev libsdl2-dev flac libflac-dev libvpx-dev libgtk2.0-dev freepats libsndfile1-dev ninja-build qtbase5-dev qtbase5-private-dev qtbase5-dev-tools qttools5-dev openssl miniupnpc libao-dev vainfo vdpauinfo libzip-dev zipcmp zipmerge ziptool glmark2-* -y
             apt update
             apt upgrade -y
             rm /etc/apt/sources.list.d/vscode.list
@@ -491,7 +491,7 @@ do
         9)
             apt install kde-plasma-desktop systemsettings plasma-workspace plasma-workspace-wayland plasma-workspace-wallpapers kwin-x11 kwin-wayland kwrite kdenetwork kcolorchooser kde-spectacle kgamma5 gwenview plasma-pa --no-install-recommends -y
             apt install udisks2 upower pulseaudio lightdm lightdm-gtk-greeter-settings pasystray f3 ghostscript libmtp-runtime vlc hyfetch synaptic gdebi htop usb-modeswitch blueman genisoimage gvfs-fuse inputattach xserver-xorg-input-all xserver-xorg-input-synaptics xserver-xorg-video-all xorg software-properties-qt system-config-printer transmission-qt tumbler mesa-utils gparted xarchiver p7zip zip unzip uuid-runtime mesa-utils-bin gvfs-backends gvfs-common soundconverter ffmpeg build-essential libcurl4-openssl-dev libalut-dev libsdl2-dev libsdl2-mixer-dev bluez-firmware alsa-utils lm-sensors libgtk-3-dev libgtk3-perl ffmpeg libavcodec-dev exfalso flac libjpeg-dev libglx-mesa0 libgl1-mesa-dri -y
-            apt install dbus-x11 build-essential git nasm libgl1-mesa-dev libsdl2-dev flac libflac-dev libvpx-dev libgtk2.0-dev freepats ninja-build qtbase5-dev qtbase5-private-dev qtbase5-dev-tools qttools5-dev openssl miniupnpc libao-dev vainfo vdpauinfo libzip-dev zipcmp zipmerge ziptool glmark2-* -y
+            apt install dbus-x11 build-essential git nasm libgl1-mesa-dev libsdl2-dev flac libflac-dev libvpx-dev libgtk2.0-dev freepats libsndfile1-dev ninja-build qtbase5-dev qtbase5-private-dev qtbase5-dev-tools qttools5-dev openssl miniupnpc libao-dev vainfo vdpauinfo libzip-dev zipcmp zipmerge ziptool glmark2-* -y
             apt update
             apt upgrade -y
             rm /etc/apt/sources.list.d/vscode.list
