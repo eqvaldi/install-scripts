@@ -17,18 +17,18 @@ for choice in $choices; do
 		case $response in
 		0)
 			apt install gnome-software gnome-software-plugin-flatpak flatpak -y
-			echo Install finished,reboot as soon as possible.
-			exit
+			echo Install finished,rebooting now.
+			reboot
 			;;
 		1)
 			echo Flatpak install skipped. --NO--
-			echo Install finished,reboot as soon as possible.
-			exit
+			echo Install finished,rebooting now.
+			reboot
 			;;
 		255)
 			echo Flatpak install skipped. --user--
-			echo Install finished,reboot as soon as possible.
-			exit
+			echo Install finished,rebooting now.
+			reboot
 			;;
 		esac
 		;;
@@ -42,18 +42,18 @@ for choice in $choices; do
 		case $response in
 		0)
 			apt install gnome-software gnome-software-plugin-flatpak flatpak -y
-			echo Install finished,reboot as soon as possible.
-			exit
+			echo Install finished,rebooting now.
+			reboot
 			;;
 		1)
 			echo Flatpak install skipped. --NO--
-			echo Install finished,reboot as soon as possible.
-			exit
+			echo Install finished,rrebooting now.
+			reboot
 			;;
 		255)
 			echo Flatpak install skipped. --user--
-			echo Install finished,reboot as soon as possible.
-			exit
+			echo Install finished,rebooting now.
+			reboot
 			;;
 		esac
 		;;
@@ -65,18 +65,18 @@ for choice in $choices; do
 		case $response in
 		0)
 			apt install gnome-software gnome-software-plugin-flatpak flatpak -y
-			echo Install finished,reboot as soon as possible.
-			exit
+			echo Install finished,rebooting now.
+			reboot
 			;;
 		1)
 			echo Flatpak install skipped. --NO--
-			echo Install finished,reboot as soon as possible.
-			exit
+			echo Install finished,rebooting now.
+			reboot
 			;;
 		255)
 			echo Flatpak install skipped. --user--
-			echo Install finished,reboot as soon as possible.
-			exit
+			echo Install finished,rebooting now.
+			reboot
 			;;
 		esac
 		;;

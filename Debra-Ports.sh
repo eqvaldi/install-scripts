@@ -12,13 +12,12 @@ options=(1 "Dhewm3"
          3 "Darkplaces"
          4 "Minetest"
          5 "Ioq3"
-         6 "worldofpadman"
+         6 "worldofpadman (WIP)"
          7 "Yamagi Quake II"
          8 "Yamagi Quake II (Git)"
-         9 "Duckstation (PSX emu.)"
-         10 "iortcw"
-	 11 "DSDA-Doom"
-	 12 "Exit")
+         9 "iortcw"
+	 10 "DSDA-Doom"
+	 11 "Exit")
 
 choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
 
@@ -99,15 +98,6 @@ do
           bash ./Debra-Ports.sh
             ;;
         9)
-          git clone https://github.com/stenzek/duckstation.git -b dev
-	  cd duckstation/
-	  cmake ./
-	  make -j$(nproc)
-	  cd ..
-	  cd ..
-          bash ./Debra-Ports.sh
-            ;;
-        10)
           git clone https://github.com/iortcw/iortcw.git
 	  cd iortcw/
    	  cd SP/
@@ -120,7 +110,7 @@ do
 	  cd ..
           bash ./Debra-Ports.sh
             ;;
-        11)
+        10)
 	  git clone https://github.com/kraflab/dsda-doom.git
 	  cd ./dsda-doom/
           cd ./prboom2/
@@ -131,7 +121,7 @@ do
     	  cd ..
           bash ./Debra-Ports.sh
             ;;
-        12)
+        11)
           exit
             ;;
 
