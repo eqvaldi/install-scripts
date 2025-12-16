@@ -17,7 +17,8 @@ options=(1 "Dhewm3"
          8 "Yamagi Quake II (Git)"
          9 "iortcw"
 	 10 "DSDA-Doom"
-	 11 "Exit")
+	 11 "Classic-cube"
+	 12 "Exit")
 
 choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
 
@@ -122,6 +123,14 @@ do
           bash ./Debra-Ports.sh
             ;;
         11)
+    	  git clone https://github.com/eqvaldi/ClassiCube-from-src.git
+    	  cd ClassiCube-from-src
+    	  bash ./build.sh
+    	  cd ..
+    	  cd ..
+          bash ./Debra-Ports.sh
+            ;;
+        12)
           exit
             ;;
 
