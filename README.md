@@ -25,7 +25,7 @@
 * Q: Do you support Armbian?
 * A: Yes.
 * Q: why are you not using Firefox,Brave,etc?
-* A: we use what works on as many hardware platforms as posible. (example:chromium is used on RaspberryPi OS,Armbian)
+* A: we use what works on as many hardware platforms as posible.
 * Q: What about Brave,etc?
 * A: we use what is located in the debian repos.
 
