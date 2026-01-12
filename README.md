@@ -61,38 +61,6 @@ This package contains also contains the non-free encode shaders for VP8, VP9, HE
 
 * To install run: `sudo apt install i965-va-driver-shaders`
 
-
-### configuration: NVIDIA
-### NOTE: nonfree must be enabled before running this.
-
-* Multiple precompiled driver versions are available for Debian 11 "Bullseye":
-
-
-* Version 470.129.06
-  Supports Kepler, Maxwell, Pascal, Turing, and all current Ampere GPUs. Supports Vulkan 1.2 and OpenGL 4.6.
-
-  supported devices:https://us.download.nvidia.com/XFree86/Linux-x86_64/470.129.06/README/supportedchips.html
-
-
-* Version 390.144
-  Supports Fermi, Kepler, Maxwell, and most Pascal GPUs. Supports Vulkan 1.0 on Kepler and newer, supports up to OpenGL 4.5 depending on your card.
-
-  supported devices:https://us.download.nvidia.com/XFree86/Linux-x86_64/390.144/README/supportedchips.html
-
-
-* To install 470.xxx.xx run: `sudo apt install nvidia-driver`
-* To install 390.xxx.xx run: `sudo apt install nvidia-legacy-390xx-driver`
-
-### NOTE: If not sure follow these steps
-install nvidia detect and some dependecies
-```bash
-sudo apt install nvidia-detect gawk grep
-```
-next run this command to install the proper driver for your gpu
-```bash
-sudo apt install $(nvidia-detect|awk {'print $1'}|grep nvidia)
-```
-
 ### configuration: Network Manager
 
 * Wired Networks are Unmanaged by Default.
