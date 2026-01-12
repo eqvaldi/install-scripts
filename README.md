@@ -11,10 +11,10 @@
 
 ### Supported Distros
 
-* Debian Bullseye (Old Stable)
-* Debian Bookworm (Stable)
-* Debian Armbian Bullseye (Old Stable)
-* Debian Armbian bookworm (Stable)
+* Debian Bookworm (Old Stable)
+* Debian Trixie (Stable)
+* Debian Armbian Bookworm (Old Stable)
+* Debian Armbian Trixie (Stable)
 
 ### QnA
 
