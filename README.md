@@ -92,22 +92,3 @@ This package contains also contains the non-free encode shaders for VP8, VP9, HE
 * Restart NetworkManager: sudo service network-manager restart
 
 * Starting with Debian 11 (bullseye), use: `sudo service NetworkManager restart`
-
-
-### About Ubuntu Support
-
-I do not support this distribution.
-
-I supported images of Ubuntu 16.04.x to ubuntu 18.04.2
-
-Since ubuntu 18.04.3 there have been several times where ubuntu/Canonical have made some changes.
-
-For example:
-
-* On embedded devices ubuntu runs slow.
-
-* It can not be used with 1gb of ram or lower.
-
-* Snaps are slow still in ubuntu 22.10 (Kinetic Kudu)
-
-* And Ubuntu 22.10 does not have armhf support.
