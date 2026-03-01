@@ -163,6 +163,21 @@ do
             ;;
         4)
           [ -d ioq3 ] && git -C ioq3 pull || git clone https://github.com/ioquake/ioq3.git
+          # Fix win_resource.rc for GNU windres:
+          # 1. Remove DISCARDABLE (MS-only RC keyword windres rejects)
+          # 2. Replace #ifdef WINDOWS_ICON_PATH block with a direct relative path;
+          #    windres loses the surrounding quotes when forwarding -D flags to the
+          #    preprocessor, so the macro expands to a bare unquoted path that the
+          #    RC parser then rejects as a syntax error.
+          python3 <<'PYEOF'
+path = 'ioq3/code/sys/win_resource.rc'
+rc = open(path).read()
+rc = rc.replace(' DISCARDABLE', '')
+old = '#ifdef WINDOWS_ICON_PATH\nIDI_ICON1               ICON        WINDOWS_ICON_PATH\n#else\nIDI_ICON1               ICON        "quake3.ico"\n#endif'
+new = 'IDI_ICON1               ICON        "../../misc/windows/quake3.ico"'
+rc = rc.replace(old, new)
+open(path, 'w').write(rc)
+PYEOF
           cd ioq3/
           rm -rf CMakeCache.txt CMakeFiles/
           cmake -DCMAKE_TOOLCHAIN_FILE="$TOOLCHAIN_FILE" \
