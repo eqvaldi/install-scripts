@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ "$(id -u)" = "0" ]; then
-    echo "ERROR: Do not run Debra-Ports as root." >&2
+    echo "ERROR: Do not run Librequke-data-installer as root." >&2
     exit 1
 fi
 
