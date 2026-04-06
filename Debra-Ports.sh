@@ -21,9 +21,9 @@ options=(1 "Dhewm3"
          7 "Yamagi Quake II"
          8 "Yamagi Quake II (Git)"
          9 "iortcw"
-	 10 "DSDA-Doom"
-	 11 "Classic-cube"
-	 12 "Exit")
+	    10 "DSDA-Doom"
+	    11 "Classic-cube"
+	    12 "Exit")
 
 choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
 
