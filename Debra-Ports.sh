@@ -20,10 +20,12 @@ options=(1 "Dhewm3"
          6 "taradino (Rise of the triad)"
          7 "Yamagi Quake II"
          8 "Yamagi Quake II (Git)"
-         9 "iortcw"
-	    10 "DSDA-Doom"
-	    11 "Classic-cube"
-	    12 "Exit")
+         9 "Yamagi Quake II (Remaster)"
+         10 "iortcw"
+	 11 "Wolf3D"
+	 12 "DSDA-Doom"
+	 13 "Classic-cube"
+	 14 "Exit")
 
 choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
 
@@ -104,6 +106,15 @@ do
           bash ./Debra-Ports.sh
             ;;
         9)
+	  git clone https://github.com/yquake2/yquake2remaster.git
+	  cd yquake2remaster/
+	  cmake ./
+	  make -j$(nproc)
+	  cd ..
+	  cd ..
+          bash ./Debra-Ports.sh
+            ;;
+        10)
           git clone https://github.com/iortcw/iortcw.git
 	  cd iortcw/
    	  cd SP/
@@ -116,7 +127,16 @@ do
 	  cd ..
           bash ./Debra-Ports.sh
             ;;
-        10)
+        11)
+	  git clone https://github.com/ECWolfEngine/ECWolf.git
+	  cd ECWolf/
+	  cmake ./
+	  make  -j$(nproc)
+	  cd ..
+	  cd ..
+          bash ./Debra-Ports.sh
+            ;;
+        12)
 	  git clone https://github.com/kraflab/dsda-doom.git
 	  cd ./dsda-doom/
           cd ./prboom2/
@@ -127,15 +147,15 @@ do
     	  cd ..
           bash ./Debra-Ports.sh
             ;;
-        11)
-    	  git clone https://github.com/eqvaldi/ClassiCube-from-src.git
-    	  cd ClassiCube-from-src
-    	  bash ./build.sh
+        13)
+    	  git clone https://github.com/ClassiCube/ClassiCube.git
+    	  cd ClassiCube
+    	  make -j$(nproc)
     	  cd ..
     	  cd ..
           bash ./Debra-Ports.sh
             ;;
-        12)
+        14)
           exit
             ;;
 
