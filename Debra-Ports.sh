@@ -14,18 +14,20 @@ cmd=(dialog --keep-tite --menu "Select a Port:" 22 76 16)
 
 options=(1 "Dhewm3"
          2 "Eduke32"
-         3 "Darkplaces"
-         4 "Minetest"
-         5 "Ioq3"
-         6 "taradino (Rise of the triad)"
-         7 "Yamagi Quake II"
-         8 "Yamagi Quake II (Git)"
-         9 "Yamagi Quake II (Remaster)"
-         10 "iortcw"
-	 11 "Wolf3D"
-	 12 "DSDA-Doom"
-	 13 "Classic-cube"
-	 14 "Exit")
+         3 "Darkplaces (quake 1)"
+         4 "QuakeSpasm (quake 1,Librequake)"
+         5 "luanti (Minetest)"
+         6 "Ioq3 (Quake3)"
+         7 "taradino (Rise of the triad)"
+         8 "Yamagi Quake II"
+         9 "Yamagi Quake II (Git)"
+         10 "Yamagi Quake II (Remaster)"
+         11 "iortcw (Return to Castle Wolfenstein)"
+	 12 "Wolf3D"
+	 13 "DSDA-Doom (Doom,Heretic,Hexen)"
+	 14 "UZDoom (Doom,Heretic,Hexen)"
+	 15 "Classic-cube"
+	 16 "Exit")
 
 choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
 
@@ -58,8 +60,17 @@ do
           bash ./Debra-Ports.sh
             ;;
         4)
-          git clone --depth 1 https://github.com/minetest/minetest.git
-	  cd minetest
+          git clone https://github.com/sezero/quakespasm.git
+          cd quakespasm/Quake/
+          make USE_SDL2=1
+          cd ..
+	  cd ..
+	  cd ..
+	  bash ./Debra-Ports.sh
+            ;;
+        5)
+          git clone --depth 1 https://github.com/luanti-org/luanti.git
+	  cd luanti/
 	  git clone --depth 1 https://github.com/minetest/minetest_game.git games/minetest_game
  	  git clone --depth 1 https://github.com/minetest/irrlicht.git lib/irrlichtmt
 	  git clone https://codeberg.org/SumianVoice/backroomtest.git games/backroomtest
@@ -69,7 +80,7 @@ do
 	  cd ..
           bash ./Debra-Ports.sh
             ;;
-        5)
+        6)
           git clone https://github.com/ioquake/ioq3.git
 	  cd ioq3/
 	  cmake ./
@@ -78,7 +89,7 @@ do
 	  cd ..
           bash ./Debra-Ports.sh
             ;;
-        6)
+        7)
           git clone https://github.com/fabiangreffrath/taradino.git
 	  cd taradino/
 	  cmake ./
@@ -87,7 +98,7 @@ do
 	  cd ..
           bash ./Debra-Ports.sh
             ;;
-        7)
+        8)
 	  wget https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_60.zip
    	  unzip *.zip
 	  rm -rf ./*.zip
@@ -97,7 +108,7 @@ do
 	  cd ..
           bash ./Debra-Ports.sh
             ;;
-        8)
+        9)
           git clone https://github.com/yquake2/yquake2.git
    	  cd yquake2
 	  make -j$(nproc)
@@ -105,7 +116,7 @@ do
 	  cd ..
           bash ./Debra-Ports.sh
             ;;
-        9)
+        10)
 	  git clone https://github.com/yquake2/yquake2remaster.git
 	  cd yquake2remaster/
 	  cmake ./
@@ -114,7 +125,7 @@ do
 	  cd ..
           bash ./Debra-Ports.sh
             ;;
-        10)
+        11)
           git clone https://github.com/iortcw/iortcw.git
 	  cd iortcw/
    	  cd SP/
@@ -127,7 +138,7 @@ do
 	  cd ..
           bash ./Debra-Ports.sh
             ;;
-        11)
+        12)
 	  git clone https://github.com/ECWolfEngine/ECWolf.git
 	  cd ECWolf/
 	  cmake ./
@@ -136,7 +147,7 @@ do
 	  cd ..
           bash ./Debra-Ports.sh
             ;;
-        12)
+        13)
 	  git clone https://github.com/kraflab/dsda-doom.git
 	  cd ./dsda-doom/
           cd ./prboom2/
@@ -147,7 +158,18 @@ do
     	  cd ..
           bash ./Debra-Ports.sh
             ;;
-        13)
+        14)
+          git clone https://github.com/UZDoom/UZDoom.git
+	  mkdir -p UZDoom/build
+	  cd UZDoom/build
+	  cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -G Ninja                             ..
+	  cmake --build .
+	  cd ..
+	  cd ..
+    	  cd ..  
+    	  bash ./Debra-Ports.sh
+            ;;     
+        15)
     	  git clone https://github.com/ClassiCube/ClassiCube.git
     	  cd ClassiCube
     	  make -j$(nproc)
@@ -155,7 +177,7 @@ do
     	  cd ..
           bash ./Debra-Ports.sh
             ;;
-        14)
+        16)
           exit
             ;;
 
