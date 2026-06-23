@@ -1,8 +1,3 @@
-### WARNING
-> DO NOT RUN THESE SCRIPTS ON UBUNTU BASED DISTRIBUTIONS
-
----
-
 # NOTE
 
 * Debra-ports moved to: https://github.com/eqvaldi/Debra-ports
