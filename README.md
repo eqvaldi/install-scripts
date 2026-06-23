@@ -3,6 +3,10 @@
 
 ---
 
+# NOTE
+
+* Debra-ports moved to: https://github.com/eqvaldi/Debra-ports
+
 # Info
 
 ### known bugs
