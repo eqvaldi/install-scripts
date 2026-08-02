@@ -18,9 +18,6 @@ echo ===========================================================================
 apt update
 apt install dialog -y
 
-dialog --msgbox "DO NOT RUN THESE SCRIPTS ON UBUNTU BASED DISTROS" 0 0
-
-
 cmd=(dialog --keep-tite --menu "Select Desktop Environment:" 22 76 16)
 
 options=(1 "Cinnamon"
